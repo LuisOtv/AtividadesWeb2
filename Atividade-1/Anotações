@@ -1,0 +1,22 @@
+- Contoller = cria um arquivo pra cada função de um objeto, nesse caso a task, um arquivo para o get, um para o put e etc, é aqui onde fica o codigo/logica.
+- Routes = cria um arquivo só, com todas as rotas do objeto, nesse caso a task.
+- Index = importa as rotas de todos as routes
+- Server = Cria o server
+
+- Database = Responsável por gerenciar o banco de dados (nesse caso um arquivo JSON)
+
+- database.js = Classe com os métodos para manipular o banco
+- db.json = Arquivo que funciona como banco de dados
+
+- Middleware = Funções que processam a requisição antes de chegar ao controller
+
+- jsonHandler.js = Processa o corpo da requisição e converte para JSON
+- routeHandler.js = Gerencia as rotas, identificando qual controller deve ser chamado
+
+- Estrutura do Projeto:
+
+- Controllers lidam com a lógica de negócio
+- Routes definem os endpoints da API
+- Middleware processa as requisições
+- Database gerencia os dados
+- Server inicializa a aplicação
