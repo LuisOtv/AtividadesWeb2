@@ -14,3 +14,13 @@ model User {
 
   @@map ("users")
 }
+
+model Question {
+  id String @id @default(uuid())
+  Title String
+  Content String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map ("questions")
+}
