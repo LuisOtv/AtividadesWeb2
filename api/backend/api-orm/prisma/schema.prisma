@@ -11,14 +11,19 @@ model User {
   id        String @id @default(uuid())
   name      String
   email     String @unique
+  questions Questions[]
 
   @@map ("users")
 }
 
-model Question {
+model Questions {
   id String @id @default(uuid())
-  Title String
-  Content String
+  title String
+  content String
+
+  userId String @map("user_id")
+  user User @relation(fields: [userId], references: [id])
+
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
