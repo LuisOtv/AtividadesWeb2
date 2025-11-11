@@ -9,7 +9,7 @@ const Tip: React.FC<TipProps> = ({ label }) => {
   return (
     <div
       style={{
-        width: "400px",
+        width: "100%",
         display: "flex",
         color: "#000000",
         backgroundColor: "#EBEBFC",
