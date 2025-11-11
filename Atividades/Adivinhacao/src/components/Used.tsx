@@ -10,7 +10,7 @@ const Used: React.FC<UsedProps> = ({ guessedLetters = [], wrongLetters = [] }) =
 
   return (
     <div>
-      <h1 style={{ fontSize: "15px", color: "#000000" }}>Letras Utilizadas</h1>
+      <h1 style={{ display: "flex", textAlign: "left", fontSize: "15px", color: "#000000" }}>Letras Utilizadas</h1>
       {allLetters.length > 0 && (
         <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
           {allLetters.map((letter) => {
